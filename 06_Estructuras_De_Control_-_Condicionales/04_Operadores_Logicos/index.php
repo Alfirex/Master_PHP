@@ -1,0 +1,115 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Alfirex
+ * Date: 02/02/2019
+ * Time: 1:22
+ */
+
+/*
+ * // CONDICIONALES
+    if (condicion){
+        instruccion
+    }else{
+        otras instrucciones
+    }
+  // Operadores de comparacion
+
+  == igual
+  === identico (mas estricto en el caso de no coincida si es string o integger por ejemplo)
+  != diferente
+  <> diferente
+  !== no identico
+  < menor que
+  > mayor que
+  <= menor o igual que
+  >= mayor o igual que
+
+  // OPERADORES LOGICOS
+  && AND Y
+  || OR  O
+  !  NOT NO
+  and, or
+
+
+ */
+// Ejemplo 1
+$sColor = "Rojo";
+
+if ($sColor == 'Rojo'){
+    echo "El color es Rojo";
+}else{
+    echo "El color NO es Rojo";
+}
+echo "<br>";
+
+// Ejemplo 2
+$nYear = 2019;
+
+if ($nYear >= 2019){
+    echo "Estamos de 2019 en adelante";
+}else{
+    echo "Es una anterior 2019";
+}
+
+// Ejemplo 3
+$sNombre = "David Extremadura";
+$sCiudad = 'Madrid';
+$sContinente = 'Asia';
+$nEdad = 42;
+$nMayoriaEdad = 18;
+
+if ($nEdad >= $nMayoriaEdad){
+    echo "<h1>".$sNombre." es mayor de edad</h1>";
+
+    if ($sContinente == 'Europa'){
+        echo "<h2>Y es de ".$sCiudad."</h2>";
+    }else{
+        echo "No es Europeo";
+    }
+}else{
+    echo "<h2>".$sNombre." No es mayor de edad</h2>";
+}
+
+echo "<hr>";
+
+// Ejemplo 4 ELSE IF
+$nDia = 3;
+if ($nDia == 1){
+    echo "Es Lunes";
+}elseif ($nDia == 2){
+    echo "Es Martes";
+}elseif ($nDia == 3){
+    echo "Es Miercoles";
+}elseif ($nDia == 4){
+    echo "Es Jueves";
+}elseif ($nDia == 5){
+    echo "Es Viernes";
+}elseif ($nDia == 6){
+    echo "Es Sabado";
+}elseif ($nDia == 7){
+    echo "Es Domingo";
+}
+
+echo "<hr>";
+
+// Ejemplo 5
+$nEdad1=18;
+$nEdad2=60;
+$nEdadOficial = 20;
+
+if ($nEdadOficial >= $nEdad1 && $nEdadOficial <= $nEdad2){
+    echo "En esta  edad de trabajar";
+}else{
+    echo "No puede trabajar";
+}
+
+echo "<hr>";
+$sPais = "Francia";
+
+if ($sPais == 'Mexico' || $sPais == 'España' || $sPais == 'Colombia'){
+    echo "En este paos se habla español";
+}else{
+    echo "No se habla español";
+}
+?>
